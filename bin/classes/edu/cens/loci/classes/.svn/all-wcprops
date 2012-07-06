@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/loci/!svn/ver/11/trunk/Loci2/src/edu/cens/loci/classes
+END
+EntitySet.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/loci/!svn/ver/26/trunk/Loci2/src/edu/cens/loci/classes/EntitySet.java
+END
+LociVisitWifi.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/loci/!svn/ver/26/trunk/Loci2/src/edu/cens/loci/classes/LociVisitWifi.java
+END
+Sources.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/loci/!svn/ver/26/trunk/Loci2/src/edu/cens/loci/classes/Sources.java
+END
+LociLocation.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/loci/!svn/ver/26/trunk/Loci2/src/edu/cens/loci/classes/LociLocation.java
+END
+LociPlace.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/loci/!svn/ver/26/trunk/Loci2/src/edu/cens/loci/classes/LociPlace.java
+END
+EntityModifier.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/loci/!svn/ver/26/trunk/Loci2/src/edu/cens/loci/classes/EntityModifier.java
+END
+LociVisitGps.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/loci/!svn/ver/26/trunk/Loci2/src/edu/cens/loci/classes/LociVisitGps.java
+END
+EntityDelta.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/loci/!svn/ver/26/trunk/Loci2/src/edu/cens/loci/classes/EntityDelta.java
+END
+WifiScanBuffer.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/loci/!svn/ver/11/trunk/Loci2/src/edu/cens/loci/classes/WifiScanBuffer.java
+END
+LociCircleArea.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/loci/!svn/ver/26/trunk/Loci2/src/edu/cens/loci/classes/LociCircleArea.java
+END
+FallbackPlacesSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/loci/!svn/ver/26/trunk/Loci2/src/edu/cens/loci/classes/FallbackPlacesSource.java
+END
+CursorEntityIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/loci/!svn/ver/26/trunk/Loci2/src/edu/cens/loci/classes/CursorEntityIterator.java
+END
+WeakAsyncTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/loci/!svn/ver/26/trunk/Loci2/src/edu/cens/loci/classes/WeakAsyncTask.java
+END
+PlacesSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/loci/!svn/ver/26/trunk/Loci2/src/edu/cens/loci/classes/PlacesSource.java
+END
+LociVisit.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/loci/!svn/ver/27/trunk/Loci2/src/edu/cens/loci/classes/LociVisit.java
+END
+LociSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/loci/!svn/ver/26/trunk/Loci2/src/edu/cens/loci/classes/LociSource.java
+END
+LociWifiFingerprint.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/loci/!svn/ver/27/trunk/Loci2/src/edu/cens/loci/classes/LociWifiFingerprint.java
+END

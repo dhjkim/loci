@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:paddingTop="10dip"
+  android:paddingBottom="5dip"
+  android:paddingLeft="7dip"
+  android:gravity="center_vertical">
+
+<!--   android:layout_height="?android:attr/listPreferredItemHeight"
+ -->
+
+  <LinearLayout
+    android:layout_width="50dip"
+    android:layout_height="match_parent"
+	android:id="@+id/wrap_icon"
+  >
+	  <ImageView 
+	    android:id="@+id/type_icon"
+	    android:layout_width="wrap_content"
+	  	android:layout_height="wrap_content"
+		android:layout_gravity="center"
+	  	android:adjustViewBounds="true"
+		android:padding="10dip"
+	  />
+	  <ImageView 
+	    android:id="@+id/state_icon"
+	    android:layout_width="wrap_content"
+	  	android:layout_height="wrap_content"
+		android:visibility="gone"
+	/>
+  </LinearLayout>	
+  <LinearLayout
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:orientation="vertical"
+  	android:layout_toRightOf="@+id/wrap_icon" 
+  	android:layout_margin="5dp"
+  	android:layout_centerVertical="true"
+  	>
+	  <TextView
+	  	android:id="@+id/text1"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+ 	  />
+	  <TextView
+		android:id="@+id/text2"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+	  />
+</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/loci/!svn/ver/6/trunk/Loci2/src/edu/cens/loci/wifiPeriodicScan
+END
+IWifiPeriodicScanManager.aidl
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/loci/!svn/ver/6/trunk/Loci2/src/edu/cens/loci/wifiPeriodicScan/IWifiPeriodicScanManager.aidl
+END
+IWifiScanListener.aidl
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/loci/!svn/ver/6/trunk/Loci2/src/edu/cens/loci/wifiPeriodicScan/IWifiScanListener.aidl
+END
+WifiPeriodicScanManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/loci/!svn/ver/6/trunk/Loci2/src/edu/cens/loci/wifiPeriodicScan/WifiPeriodicScanManager.java
+END
+WifiScanListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/loci/!svn/ver/6/trunk/Loci2/src/edu/cens/loci/wifiPeriodicScan/WifiScanListener.java
+END
+WifiPeriodicScanService.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/loci/!svn/ver/6/trunk/Loci2/src/edu/cens/loci/wifiPeriodicScan/WifiPeriodicScanService.java
+END

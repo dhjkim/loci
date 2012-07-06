@@ -1,0 +1,318 @@
+package edu.cens.loci.components;
+
+import android.app.PendingIntent;
+import android.content.ComponentName;
+import android.content.ServiceConnection;
+import android.net.Uri;
+import android.os.IBinder;
+import android.os.RemoteException;
+import android.util.Log;
+import edu.cens.loci.components.Loci.CommonPlaceDataKinds.WifiFingerprint;
+import edu.cens.loci.provider.LociDatabaseHelper.Tables;
+
+public class Loci {
+
+		private static final String TAG = "Loci";
+		private static ILociManager sIService;
+		private static boolean sIsBound = false;
+
+  	public ServiceConnection LociConnection = new ServiceConnection() {
+  		public void onServiceConnected(ComponentName className, IBinder service) {
+  			Log.d(TAG, "onServiceConnected() <= ILociManager connected");
+  			sIService = ILociManager.Stub.asInterface(service);
+  			sIsBound = true;
+  		}
+  		public void onServiceDisconnected(ComponentName className) {
+  			Log.d(TAG, "onServiceDisconnected()");
+  			sIService = null;
+  			sIsBound = false;
+  		}
+  	};
+  	
+  	public boolean isConnected() {
+  		return sIsBound;
+  	}
+  	
+  	public void addPlaceAlert(long placeid, long expiration, PendingIntent intent) {
+  		if (sIsBound) {
+  			try {
+					sIService.addPlaceAlert(placeid, expiration, intent);
+				} catch (RemoteException re) {
+					Log.e(TAG, "Remote Exception", re);
+				}
+  		} else {
+  			Log.d(TAG, "Loci service is not connected.");
+  		}
+  	}
+  	
+  	public void removePlaceAlert(PendingIntent intent) {
+  		if (sIsBound) {
+  			try {
+					sIService.removePlaceAlert(intent);
+				} catch (RemoteException re) {
+					Log.e(TAG, "Remote Exception", re);
+				}
+  		} else {
+  			Log.d(TAG, "Loci service is not connected.");
+  		}
+  	}
+  	
+  	
+  	public static final String AUTHORITY = "edu.ucla.cens.android.loci";
+  	public static final Uri AUTHORITY_URI = Uri.parse("content://" + AUTHORITY);
+  	
+  	
+
+  	public interface BaseColumns {
+  		public static final String _ID = "_id";
+  		public static final String _COUNT  = "_count";
+  	}
+  	
+  	public static class Visits implements BaseColumns, VisitsColumns, BaseSyncColumns {
+  		private Visits() {}
+  		//public static final Uri CONTENT_URI = Uri.parse("content://visit_log/visits");
+  		public static final Uri CONTENT_URI = Uri.withAppendedPath(AUTHORITY_URI, "visits");
+  		public static final String CONTENT_TYPE = "vnd.android.cursor.dir/vnd.cens.loci.visit";
+  		public static final String CONTENT_ITEM_TYPE = "vnd.android.cursor.item/vnd.cens.loci.visit";
+  	}
+  	
+  	protected interface VisitsColumns {
+  		public static final String ENTER 			= "enter";
+  		public static final String EXIT 			= "exit";
+  		public static final String PLACE_ID 	= "place_id";
+  		public static final String TYPE 			= "type";
+  		public static final String EXTRA1 		= "extra1"; // Wifi fingerprint
+  		public static final String EXTRA2 		= "extra2"; // place recognition result list
+  		public static final String EXTRA3			= "extra3"; // comments
+  		
+  		public static final int TYPE_GPS = 1;
+  		public static final int TYPE_WIFI = 2;
+  	}
+  	
+  	public static class Tracks implements BaseColumns, TracksColumns {
+  		private Tracks() {}
+  		public static final Uri CONTENT_URI = Uri.withAppendedPath(AUTHORITY_URI, "tracks");
+  		public static final String CONTENT_TYPE = "vnd.android.cursor.dir/vnd.cens.loci.track";
+  		public static final String CONTENT_ITEM_TYPE = "vnd.android.cursor.item/vnd.cens.loci.track";
+  	}
+  	
+  	protected interface TracksColumns {
+  		public static final String TIME = "time";
+  		public static final String LATITUDE = "latitude";
+  		public static final String LONGITUDE = "longitude";
+  		public static final String ALTITUDE = "altitude";
+  		public static final String SPEED = "speed";
+  		public static final String ACCURACY = "accuracy";
+  		public static final String BEARING = "bearing";
+  		public static final String SYNC = "sync";
+  	}
+  	
+  	public static class Places implements BaseColumns, PlacesColumns, BaseSyncColumns {
+  		private Places() {}
+  		public static final Uri CONTENT_URI = Uri.withAppendedPath(AUTHORITY_URI, "places");
+  		public static final String CONTENT_TYPE = "vnd.android.cursor.dir/vnd.cens.loci.place";
+  		public static final String CONTENT_ITEM_TYPE = "vnd.android.cursor.item/vnd.cens.loci.place";
+  	}
+  	
+  	protected interface PlacesColumns {
+  		public static final String NAME 					= "name";
+  		public static final String TYPE 					= "type";
+  		public static final String STATE 					= "state";
+  		
+  		public static final String TIMES_VISITED = "times_visited";
+  		
+  		// to save parameters 
+  		public static final String EXTRA1 = "extra1";
+  		public static final String EXTRA2 = "extra2";
+  		public static final String EXTRA3 = "extra3";
+  		
+  		public static final String ENTRY 					= "entry";
+  		public static final String ENTRY_TIME 		= "entry_time";
+  		public static final String REGISTER_TIME 	= "register_time";
+
+  		public static final int TYPE_GPS = 1;
+  		public static final int TYPE_WIFI = 2;
+  		
+  		public static final int STATE_SUGGESTED = 1;
+  		public static final int STATE_REGISTERED = 2;
+  		public static final int STATE_BLOCKED = 2;
+  		public static final int STATE_DELETED = 3;
+  		public static final int STATE_MERGED = 4;
+  		
+  		public static final int ENTRY_WIFI_SUGGESTED = 1;
+  		public static final int ENTRY_WIFI_USE_SHORT_VISIT = 2;
+  		public static final int ENTRY_WIFI_OVERWRITE_WRONG_RECOGNITION = 3;
+  		public static final int ENTRY_GPS_SUGGESTED = 4;
+  		public static final int ENTRY_GPS_USER_DEFINED = 5;
+  		
+  	}
+  	
+  	public interface MimetypesColumns {
+  		public static final String _ID = BaseColumns._ID;
+  		public static final String MIMETYPE = "mimetype";
+  		
+  		public static final String CONCRETE_ID = Tables.MIMETYPES + "." + BaseColumns._ID;
+  		public static final String CONCRETE_MIMETYPE = Tables.MIMETYPES + "." + MIMETYPE;
+  	}
+  	
+  	
+  	public final static class Data implements BaseColumns, DataColumns {
+  		private Data() {}
+  		public static final Uri CONTENT_URI = Uri.withAppendedPath(AUTHORITY_URI, "data");
+  		public static final String CONTENT_TYPE = "vnd.android.cursor.dir/vnd.cens.loci.data";
+  	}
+  	
+  	protected interface DataColumns {
+  		public static final String MIMETYPE = "mimetype";
+  		public static final String PLACE_ID = "place_id";
+  		public static final String DATA_VERSION = "data_version";
+  		
+      /** Generic data column, the meaning is {@link #MIMETYPE} specific */
+      public static final String DATA1 = "data1";
+      /** Generic data column, the meaning is {@link #MIMETYPE} specific */
+      public static final String DATA2 = "data2";
+      /** Generic data column, the meaning is {@link #MIMETYPE} specific */
+      public static final String DATA3 = "data3";
+      /** Generic data column, the meaning is {@link #MIMETYPE} specific */
+      public static final String DATA4 = "data4";
+      /** Generic data column, the meaning is {@link #MIMETYPE} specific */
+      public static final String DATA5 = "data5";
+      /** Generic data column, the meaning is {@link #MIMETYPE} specific */
+      public static final String DATA6 = "data6";
+      /** Generic data column, the meaning is {@link #MIMETYPE} specific */
+      public static final String DATA7 = "data7";
+      /** Generic data column, the meaning is {@link #MIMETYPE} specific */
+      public static final String DATA8 = "data8";
+      /** Generic data column, the meaning is {@link #MIMETYPE} specific */
+      public static final String DATA9 = "data9";
+      /** Generic data column, the meaning is {@link #MIMETYPE} specific */
+      public static final String DATA10 = "data10";
+      /** Generic data column, the meaning is {@link #MIMETYPE} specific */
+      public static final String DATA11 = "data11";
+      /** Generic data column, the meaning is {@link #MIMETYPE} specific */
+      public static final String DATA12 = "data12";
+      /** Generic data column, the meaning is {@link #MIMETYPE} specific */
+      public static final String DATA13 = "data13";
+      /** Generic data column, the meaning is {@link #MIMETYPE} specific */
+      public static final String DATA14 = "data14";
+      /**
+       * Generic data column, the meaning is {@link #MIMETYPE} specific. By convention,
+       * this field is used to store BLOBs (binary data).
+       */
+      public static final String DATA15 = "data15";
+
+      /** Generic column for use by sync adapters. */
+      public static final String SYNC1 = "data_sync1";
+      /** Generic column for use by sync adapters. */
+      public static final String SYNC2 = "data_sync2";
+      /** Generic column for use by sync adapters. */
+      public static final String SYNC3 = "data_sync3";
+      /** Generic column for use by sync adapters. */
+      public static final String SYNC4 = "data_sync4";
+  		
+  	}
+  	
+  	
+    /**
+     * Generic columns for use by sync adapters. The specific functions of
+     * these columns are private to the sync adapter. Other clients of the API
+     * should not attempt to either read or write this column.
+     *
+     */
+    protected interface BaseSyncColumns {
+    		public static final String VERSION = "version";
+    		public static final String DIRTY = "dirty";
+    		
+        /** Generic column for use by sync adapters. */
+        public static final String SYNC1 = "sync1";
+        /** Generic column for use by sync adapters. */
+        public static final String SYNC2 = "sync2";
+        /** Generic column for use by sync adapters. */
+        public static final String SYNC3 = "sync3";
+        /** Generic column for use by sync adapters. */
+        public static final String SYNC4 = "sync4";
+    }
+
+    public static final class CommonPlaceDataKinds {
+    	private CommonPlaceDataKinds() {}
+    	
+      /**
+       * The base types that all "Typed" data kinds support.
+       */
+      public interface BaseTypes {
+          /**
+           * A custom type. The custom label should be supplied by user.
+           */
+          public static int TYPE_CUSTOM = 0;
+      }
+
+      /**
+       * Columns common across the specific types.
+       */
+      protected interface CommonColumns extends BaseTypes {
+          /**
+           * The data for the contact method.
+           * <P>Type: TEXT</P>
+           */
+          public static final String DATA = DataColumns.DATA1;
+
+          /**
+           * The type of data, for example Home or Work.
+           * <P>Type: INTEGER</P>
+           */
+          public static final String TYPE = DataColumns.DATA2;
+
+          /**
+           * The user defined label for the the contact method.
+           * <P>Type: TEXT</P>
+           */
+          public static final String LABEL = DataColumns.DATA3;
+      }
+    	
+    	public static final class WifiFingerprint implements DataColumns, CommonColumns {
+    		private WifiFingerprint() {}
+    		
+    		public static final String CONTENT_ITEM_TYPE = "vnd.android.cursor.item/vnd.cens.loci.wififingerprint";
+    		public static final String CONTENT_TYPE = "vnd.android.cursor.dir/vnd.cens.loci.wififingerprint";
+    	
+    		public static final String FINGERPRINT = DATA;
+    		public static final String TIMESTAMP = DATA4;
+    		
+    	  public static interface WifiDataQuery {
+    	  	String[] COLUMNS = {Data._ID, Data.PLACE_ID, WifiFingerprint.FINGERPRINT, WifiFingerprint.TIMESTAMP};
+    	  	int _ID = 0;
+    	  	int PLACEID = 1;
+    	  	int FINGERPRINT = 2;
+    	  	int TIMESTAMP = 3;
+    	  }
+    	}
+    	
+    	public static final class GpsCircleArea implements DataColumns, CommonColumns {
+    		private GpsCircleArea() {}
+    		
+    		public static final String CONTENT_ITEM_TYPE = "vnd.android.cursor.item/vnd.cens.loci.gpsposition";
+    		public static final String CONTENT_TYPE = "vnd.android.cursor.dir/vnd.cens.loci.gpsposition";
+    		
+    		public static final String LATITUDE = DATA4;
+    		public static final String LONGITUDE = DATA5;
+    		public static final String RADIUS = DATA6;
+    		
+    		public static final int TYPE_SUGGESTED = 1;
+    		public static final int TYPE_USER_DEFINED = 2;
+    	}
+    	
+    	public static final class Keyword implements DataColumns, CommonColumns {
+    		private Keyword() {}
+    		
+    		public static final String CONTENT_ITEM_TYPE = "vnd.android.cursor.item/vnd.cens.loci.keyword";
+    		public static final String CONTENT_TYPE = "vnd.android.cursor.dir/vnd.cens.loci.keyword";
+    		
+    		public static final String TAG = DATA;
+    		public static final String CATEGORY = TYPE;
+    		
+    		public static final int CATEGORY_PERSONAL = 1;
+    		public static final int CATEGORY_BUSINESSNAME = 2;
+
+    	}
+    }
+}

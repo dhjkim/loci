@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/loci/!svn/ver/6/trunk/Loci2/src/edu/cens/loci/components
+END
+ILociListener.aidl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/loci/!svn/ver/6/trunk/Loci2/src/edu/cens/loci/components/ILociListener.aidl
+END
+RebootEventReceiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/loci/!svn/ver/26/trunk/Loci2/src/edu/cens/loci/components/RebootEventReceiver.java
+END
+LociManagerService.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/loci/!svn/ver/26/trunk/Loci2/src/edu/cens/loci/components/LociManagerService.java
+END
+PlaceDetectorGps.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/loci/!svn/ver/11/trunk/Loci2/src/edu/cens/loci/components/PlaceDetectorGps.java
+END
+ILociManager.aidl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/loci/!svn/ver/26/trunk/Loci2/src/edu/cens/loci/components/ILociManager.aidl
+END
+LociListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/loci/!svn/ver/6/trunk/Loci2/src/edu/cens/loci/components/LociListener.java
+END
+PlaceDetector.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/loci/!svn/ver/11/trunk/Loci2/src/edu/cens/loci/components/PlaceDetector.java
+END
+LociManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/loci/!svn/ver/6/trunk/Loci2/src/edu/cens/loci/components/LociManager.java
+END
+LociMovementHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/loci/!svn/ver/26/trunk/Loci2/src/edu/cens/loci/components/LociMovementHandler.java
+END
+WatchDogAlarmReceiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/loci/!svn/ver/26/trunk/Loci2/src/edu/cens/loci/components/WatchDogAlarmReceiver.java
+END
+LociPathHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/loci/!svn/ver/26/trunk/Loci2/src/edu/cens/loci/components/LociPathHandler.java
+END
+LociPlaceHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/loci/!svn/ver/27/trunk/Loci2/src/edu/cens/loci/components/LociPlaceHandler.java
+END
+PlaceDetectorWifi.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/loci/!svn/ver/27/trunk/Loci2/src/edu/cens/loci/components/PlaceDetectorWifi.java
+END
+GoogleLocalSearchHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/loci/!svn/ver/26/trunk/Loci2/src/edu/cens/loci/components/GoogleLocalSearchHandler.java
+END
+GooglePlaceAPIHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/loci/!svn/ver/26/trunk/Loci2/src/edu/cens/loci/components/GooglePlaceAPIHandler.java
+END

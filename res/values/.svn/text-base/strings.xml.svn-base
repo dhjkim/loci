@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Loci2</string>
+    
+    <string name="mapkey">08_EkOGaQeglhoBYhnFIHYa4QZA-Pqc9VM258jg</string>
+    <string name="mapkeyrelease">08_EkOGaQeglhoBYhnFIHYa4QZA-Pqc9VM258jg</string>
+    <string name="mapkeydev">08_EkOGaQeglIizq41ZdhBqPm4dWF3oZaXb2njQ</string>
+
+    <string name="menu_start">Press to Turn On</string>
+    <string name="menu_stop">Press to Turn Off</string>
+    <string name="menu_settings">Settings</string>
+    
+    <string name="settingsTitle">Loci Settings</string>
+    
+    <string name="sun">Sun</string> 
+  	<string name="mon">Mon</string> 
+  	<string name="tue">Tue</string> 
+ 	<string name="wed">Wed</string> 
+	<string name="thr">Thu</string> 
+	<string name="fri">Fri</string> 
+	<string name="sat">Sat</string> 
+	<string name="sunday">Sunday</string> 
+	<string name="monday">Monday</string> 
+	<string name="tuesday">Tuesday</string> 
+	<string name="wednesday">Wednesday</string> 
+	<string name="thirsday">Thursday</string> 
+	<string name="friday">Friday</string> 
+	<string name="saturday">Saturday</string> 
+
+    <string name="pickerNewPlaceHeader">Create new place</string>
+    
+    <!-- Text describing that a place has no information available other than name and photo -->
+    <string name="no_place_details">No additional information for this place</string>
+    
+    <!-- place_edit.xml -->
+    <string name="menu_done">Done</string>
+	<string name="menu_doNotSave">Cancel</string>
+	
+	<string name="menu_map_pick_date">Pick date</string>
+	<string name="menu_map_mode_map">View map mode</string>
+	<string name="menu_map_mode_sat">View satellite mode</string>
+	
+	<string name="editPlace_title_edit">Edit place</string>
+	<string name="editPlace_title_insert">New place</string>
+	<string name="description_place_photo">place photo</string>
+    <!-- String describing the Contact Editor Minus button
+         Used by AccessibilityService to announce the purpose of the button.
+    -->
+    <string name="description_minus_button">minus</string>
+    <!-- String describing the Contact Editor Plus button
+         Used by AccessibilityService to announce the purpose of the button.
+    -->
+    <string name="description_plus_button">plus</string>
+    
+    <!-- The description presented to the user in the Intent choose when there are multiple activities that allow
+         editing a place. This string represents the built in way to edit the place. -->
+    <string name="editPlaceDescription">Edit place</string>
+
+    <!-- The description presented to the user in the Intent choose when there are multiple activities that allow
+         creating a new place. This string represents the built in way to create the place. -->
+    <string name="insertPlaceDescription">Create place</string>
+    
+    <string name="wifiFingerprintLabelsGroup">Wi-Fi Fingerprint</string>
+    
+    <!-- Header that expands to list all of the types of postal addresses when editing or creating an postal address for a contact -->
+    <string name="keywordLabelsGroup">Tag</string>
+    
+    <!-- Header that expands to list all of the types of postal addresses when editing or creating an postal address for a contact -->
+    <string name="postalLabelsGroup">Postal address</string>
+    
+    <!-- Header that expands to list all website types when editing a website of a contact -->
+    <string name="websiteLabelsGroup">Website</string>
+
+    <!-- The label describing the Notes field of a contact. This field allows free form text entry about a contact -->
+    <string name="label_notes">Notes</string>
+    
+	<!-- Action string for viewing a home postal address -->
+    <string name="map_address">View address</string>
+    
+    <!-- Field title for the street of a structured postal address of a contact -->
+    <string name="postal_street">Street</string>
+    <!-- Field title for the PO box of a structured postal address of a contact -->
+    <string name="postal_pobox">PO box</string>
+    <!-- Field title for the neighborhood of a structured postal address of a contact -->
+    <string name="postal_neighborhood">Neighborhood</string>
+    <!-- Field title for the city of a structured postal address of a contact -->
+    <string name="postal_city">City</string>
+    <!-- Field title for the region, or state, of a structured postal address of a contact -->
+    <string name="postal_region">State</string>
+    <!-- Field title for the postal code of a structured postal address of a contact -->
+    <string name="postal_postcode">ZIP code</string>
+    <!-- Field title for the country of a structured postal address of a contact -->
+    <string name="postal_country">Country</string>
+    
+    
+    
+    <!-- String used to display calls from unknown numbers in the call log -->
+    <string name="unknown">Unknown</string>
+    
+    <!-- Checkbox asking the user if they want to display a particular photo for a contact -->
+    <string name="use_photo_as_primary">Use this photo</string>
+    
+    <!-- The button/menu item that allows you to change an existing contact picture -->
+    <string name="changePicture">Change icon</string>
+
+    <!-- The menu item that allows you to remove a picture from a contact -->
+    <string name="removePicture">Remove icon</string>
+    
+    <!-- Description of the activity used to set a photo in the pictures application as the icon for a contact -->
+    <string name="attachToPlace">Place icon</string>
+    
+    <!-- An option in the 'change photo' or 'pick photo' dialog -->
+    <string name="take_photo">Take photo</string>
+
+    <!-- An option in the 'change photo' or 'pick photo' dialog -->
+    <string name="pick_photo">Select photo from Gallery</string>
+    
+    <!-- Description in the dialog that appears if there are no pictures from which to create an icon for a contact -->
+    <string name="photoPickerNotFoundText">No pictures are available on the phone.</string>
+    
+    <string-array name="keyword_default">
+    	<item>Home</item>
+    	<item>Work</item>
+    	<item>Grocery</item>
+    	<item>Coffee</item>
+    	<item>Bar</item>
+    	<item>Restaurant</item>
+    	<item>Gym</item>
+    	<item>Friend\'s</item>
+    </string-array>
+    
+    <!-- Displayed in a spinner dialog after the user creates a contact and it's being saved to the database -->
+    <string name="savingPlace">Saving place\u2026</string>
+    
+    <!-- Toast displayed when a contact is saved -->
+    <string name="placeSavedToast">Place saved.</string>
+
+    <!-- Toast displayed when saving a contact failed -->
+    <string name="placeSavedErrorToast">Error, unable to save place changes.</string>
+    
+    <!-- Menu item used to edit a specific place -->
+    <string name="menu_editPlace">Edit place</string>
+
+    <!-- Menu item used to delete a specific place -->
+    <string name="menu_deletePlace">Delete place</string>
+
+    <!-- Menu item used to block a specific place -->
+    <string name="menu_blockPlace">Block place</string>
+
+    <!-- Menu item used to unblock a specific place -->
+    <string name="menu_unblockPlace">Unblock place</string>        
+    
+    <!-- A nicely formatted call duration displayed when viewing call details. For example "42 mins 28 secs" -->
+    <string name="visitDetailsDurationFormat"><xliff:g id="hours" example="2">%1$s</xliff:g> hrs <xliff:g id="mins" example="28">%2$s</xliff:g> mins</string>
+    
+    <!-- Title bar for call detail screen -->
+    <string name="visitDetailTitle">Visit details</string>
+    
+    <string name="visitDetail_addWiFiPlace">and add Wi-Fi fingerprint to another place</string>
+    
+</resources>

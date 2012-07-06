@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="Loci Settings">
+
+	<CheckBoxPreference
+		android:key="use_loci"
+		android:title="Use Loci"
+		android:persistent="true"
+		android:defaultValue="false"
+		/>
+
+	<PreferenceCategory
+		android:title="Sensing Settings"
+		/>
+		
+	<CheckBoxPreference
+		android:key="use_place_sensing"
+		android:title="Use place sensing"
+		android:summary="Learn and recognize my places"
+		android:persistent="true"
+		android:defaultValue="true"
+		/>
+		
+	<ListPreference
+		android:key="place_sensing_rate"
+		android:title="Place sensing rate"
+		android:summary="Set place visit check frequency"
+		android:persistent="true"
+		android:entries="@array/place_sensing_rate_entries"
+		android:entryValues="@array/place_sensing_rate_values"
+		android:defaultValue="10000"
+		/>
+		
+	<CheckBoxPreference
+		android:key="use_path_tracking"
+		android:title="Use path tracking"
+		android:summary="Track my paths"
+		android:persistent="true"
+		android:defaultValue="true"
+		/>
+		
+	<ListPreference
+		android:key="path_tracking_rate"
+		android:title="Path tracking rate"
+		android:summary="Set path granularity"
+		android:persistent="true"
+		android:entries="@array/path_tracking_rate_entries"
+		android:entryValues="@array/path_tracking_rate_values"
+		android:defaultValue="15000"
+		/>
+    
+    <PreferenceCategory
+		android:title="Notification Settings"
+		/>
+		
+	<CheckBoxPreference
+		android:key="new_suggested_places"
+		android:title="New suggested places"
+		android:summary="Receive notifications when a new suggested place is available"
+		androidLpersistent="true"
+		/>
+		
+	<PreferenceCategory
+		android:title="System status"
+		/>
+		
+    <Preference
+          android:key="view_components_status"
+          android:title="View components status"
+          android:summary="Check which components are currently on/off"
+          android:persistent="true"
+          android:singleLine="true"
+          /> 
+    
+    <!--  
+    <ListPreference
+            android:key="sleep_policy"
+            android:title="@string/wifi_setting_sleep_policy_title"
+            android:summary="@string/wifi_setting_sleep_policy_summary"
+            android:persistent="false"
+            android:entries="@array/wifi_sleep_policy_entries"
+            android:entryValues="@array/wifi_sleep_policy_values"
+            />
+    
+    <Preference android:key="mac_address" 
+        style="?android:attr/preferenceInformationStyle" 
+        android:title="@string/wifi_advanced_mac_address_title"
+        />
+    
+    <Preference android:key="current_ip_address"
+        style="?android:attr/preferenceInformationStyle"
+        android:title="@string/wifi_advanced_ip_address_title"
+        />
+
+    <PreferenceCategory
+            android:title="@string/wifi_ip_settings_titlebar"
+            />
+    
+    <CheckBoxPreference
+            android:key="use_static_ip"
+            android:title="@string/wifi_use_static_ip"
+            android:persistent="false"
+            />    
+    
+    <EditTextPreference
+            android:dependency="use_static_ip"
+            android:key="ip_address"
+            android:title="@string/wifi_ip_address"
+            android:persistent="false"
+            android:singleLine="true"
+            />    
+    
+    <EditTextPreference
+            android:dependency="use_static_ip"
+            android:key="gateway"
+            android:title="@string/wifi_gateway"
+            android:persistent="false"
+            android:singleLine="true"
+            />    
+    
+    <EditTextPreference
+            android:dependency="use_static_ip"
+            android:key="netmask"
+            android:title="@string/wifi_netmask"
+            android:persistent="false"
+            android:singleLine="true"
+            />    
+
+    <EditTextPreference
+            android:dependency="use_static_ip"
+            android:key="dns1"
+            android:title="@string/wifi_dns1"
+            android:persistent="false"
+            android:singleLine="true"
+            />    
+    
+    <EditTextPreference
+            android:dependency="use_static_ip"
+            android:key="dns2"
+            android:title="@string/wifi_dns2"
+            android:persistent="false"
+            android:singleLine="true"
+            />    
+    -->
+</PreferenceScreen>

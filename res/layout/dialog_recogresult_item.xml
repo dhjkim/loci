@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+  	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<TextView
+			android:id="@+id/recogTime"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="3dp"
+			android:textColor="#ffffff"
+			android:text=""
+			android:textSize="11dp"
+		/>
+		<TextView
+			android:id="@+id/recogPlaceName"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toLeftOf="@+id/recogSigTag"
+			android:gravity="center"
+			android:padding="3dp"
+			android:textColor="#ffffff"
+			android:text=""
+			android:textSize="11dp"
+		/>
+		<TextView
+			android:id="@+id/recogSigTag"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toLeftOf="@+id/recogScore"
+			android:layout_centerVertical="true"
+			android:padding="3dp"
+			android:text=""
+			android:textSize="9dp"
+		/>
+		<TextView
+			android:id="@+id/recogScore"
+			android:layout_width="40dp"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:paddingTop="3dp"
+			android:paddingBottom="3dp"
+			android:paddingRight="10dp"
+			android:textColor="#ffffff"
+			android:text=""
+			android:textSize="11dp"
+			android:gravity="right"
+		/>
+
+	</RelativeLayout>
+  
+</LinearLayout>

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/loci/!svn/ver/6/trunk/Loci2/src/edu/cens/loci/utils
+END
+EmptyService.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/loci/!svn/ver/26/trunk/Loci2/src/edu/cens/loci/utils/EmptyService.java
+END
+MyDateUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/loci/!svn/ver/26/trunk/Loci2/src/edu/cens/loci/utils/MyDateUtils.java
+END
+NotifyingAsyncQueryHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/loci/!svn/ver/26/trunk/Loci2/src/edu/cens/loci/utils/NotifyingAsyncQueryHandler.java
+END
+MyLog.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/loci/!svn/ver/27/trunk/Loci2/src/edu/cens/loci/utils/MyLog.java
+END
+LocationUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/loci/!svn/ver/11/trunk/Loci2/src/edu/cens/loci/utils/LocationUtils.java
+END

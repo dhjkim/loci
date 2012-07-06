@@ -1,0 +1,209 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/loci/!svn/ver/6/trunk/Loci2/res/layout
+END
+item_place_type_select_field.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/loci/!svn/ver/26/trunk/Loci2/res/layout/item_place_type_select_field.xml
+END
+visit_detail.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/loci/!svn/ver/26/trunk/Loci2/res/layout/visit_detail.xml
+END
+map_tab.xml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/loci/!svn/ver/11/trunk/Loci2/res/layout/map_tab.xml
+END
+item_generic_editor.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/loci/!svn/ver/26/trunk/Loci2/res/layout/item_generic_editor.xml
+END
+item_kind_section.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/loci/!svn/ver/26/trunk/Loci2/res/layout/item_kind_section.xml
+END
+map_edit.xml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/loci/!svn/ver/26/trunk/Loci2/res/layout/map_edit.xml
+END
+balloon_overlay_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/loci/!svn/ver/11/trunk/Loci2/res/layout/balloon_overlay_item.xml
+END
+place_list.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/loci/!svn/ver/26/trunk/Loci2/res/layout/place_list.xml
+END
+item_editor_field.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/loci/!svn/ver/26/trunk/Loci2/res/layout/item_editor_field.xml
+END
+place_edit.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/loci/!svn/ver/26/trunk/Loci2/res/layout/place_edit.xml
+END
+dialog_one_edit_text.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/loci/!svn/ver/26/trunk/Loci2/res/layout/dialog_one_edit_text.xml
+END
+item_place_editor.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/loci/!svn/ver/26/trunk/Loci2/res/layout/item_place_editor.xml
+END
+visit_detail_list_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/loci/!svn/ver/26/trunk/Loci2/res/layout/visit_detail_list_item.xml
+END
+calendar_daily.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/loci/!svn/ver/11/trunk/Loci2/res/layout/calendar_daily.xml
+END
+item_editor_autocomplete_field.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/loci/!svn/ver/26/trunk/Loci2/res/layout/item_editor_autocomplete_field.xml
+END
+item_editor_wifi_field.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/loci/!svn/ver/26/trunk/Loci2/res/layout/item_editor_wifi_field.xml
+END
+balloon_overlay.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/loci/!svn/ver/11/trunk/Loci2/res/layout/balloon_overlay.xml
+END
+calendar_main.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/loci/!svn/ver/11/trunk/Loci2/res/layout/calendar_main.xml
+END
+dialog_visit_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/loci/!svn/ver/26/trunk/Loci2/res/layout/dialog_visit_view.xml
+END
+places_list_by_state.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/loci/!svn/ver/26/trunk/Loci2/res/layout/places_list_by_state.xml
+END
+item_map_editor.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/loci/!svn/ver/26/trunk/Loci2/res/layout/item_map_editor.xml
+END
+dialog_recogresult_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/loci/!svn/ver/26/trunk/Loci2/res/layout/dialog_recogresult_view.xml
+END
+place_list_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/loci/!svn/ver/26/trunk/Loci2/res/layout/place_list_item.xml
+END
+dialog_recogresult_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/loci/!svn/ver/26/trunk/Loci2/res/layout/dialog_recogresult_item.xml
+END
+item_suggestion_list.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/loci/!svn/ver/26/trunk/Loci2/res/layout/item_suggestion_list.xml
+END
+dialog_wifi_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/loci/!svn/ver/26/trunk/Loci2/res/layout/dialog_wifi_view.xml
+END
+status_list_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/loci/!svn/ver/26/trunk/Loci2/res/layout/status_list_item.xml
+END
+dialog_search_result_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/loci/!svn/ver/26/trunk/Loci2/res/layout/dialog_search_result_item.xml
+END
+place_view_list_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/loci/!svn/ver/26/trunk/Loci2/res/layout/place_view_list_item.xml
+END
+loci_settings.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/loci/!svn/ver/26/trunk/Loci2/res/layout/loci_settings.xml
+END
+place_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/loci/!svn/ver/26/trunk/Loci2/res/layout/place_view.xml
+END
+item_photo_editor.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/loci/!svn/ver/26/trunk/Loci2/res/layout/item_photo_editor.xml
+END
+create_new_place.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/loci/!svn/ver/26/trunk/Loci2/res/layout/create_new_place.xml
+END
+calendar_daily_items.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/loci/!svn/ver/11/trunk/Loci2/res/layout/calendar_daily_items.xml
+END

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:id="@+id/LinearLayout01" 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+>
+	<LinearLayout 
+		android:id="@+id/LinearLayout01" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+	    android:gravity="center"
+	    android:weightSum="1"
+	    android:layout_marginTop="3dp"
+	> 
+		<Button xmlns:android="http://schemas.android.com/apk/res/android" 
+		    android:id="@+id/prevYear"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+		    android:gravity="center"
+		    android:text="&lt;&lt;"
+		    android:layout_weight="0.1"
+		/>    
+		<Button xmlns:android="http://schemas.android.com/apk/res/android" 
+		    android:id="@+id/prevMonth"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+		    android:gravity="center"
+		    android:text="&lt;"
+		    android:layout_weight="0.1"
+		/>    
+		<TextView xmlns:android="http://schemas.android.com/apk/res/android" 
+		    android:id="@+id/textview"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+		    android:gravity="center"
+		    android:textSize="20sp"
+		    android:textStyle="bold"
+		    android:layout_weight="0.6"
+		/>    
+		<Button xmlns:android="http://schemas.android.com/apk/res/android" 
+		    android:id="@+id/nextMonth"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+		    android:gravity="center"
+		    android:text="&gt;"
+		    android:layout_weight="0.1"
+		/>    
+		<Button xmlns:android="http://schemas.android.com/apk/res/android" 
+		    android:id="@+id/nextYear"
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+		    android:gravity="center"
+		    android:text="&gt;&gt;"
+		    android:layout_weight="0.1"
+		/>    
+	</LinearLayout>
+	<GridView xmlns:android="http://schemas.android.com/apk/res/android" 
+	    android:id="@+id/gridview"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="fill_parent"
+	    android:numColumns="7"
+	    android:verticalSpacing="5dp"
+	    android:horizontalSpacing="5dp"
+	    android:gravity="center"
+	>
+</GridView>
+</LinearLayout>

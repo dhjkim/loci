@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:scrollbars="vertical">
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  	<TableLayout 
+		android:id="@+id/wifi_table"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:scrollbars="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+		<TableRow>
+			<TextView
+				android:id="@+id/wi_item_name"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="2dp"
+				android:gravity="left"
+				android:text="ssid"
+			/>
+			<TextView
+				android:id="@+id/wi_item_bssid"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="2dp"
+				android:gravity="center"
+				android:text="bssid"
+			/>
+			<TextView
+				android:id="@+id/wi_item_numScans"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="2dp"
+				android:gravity="center"
+				android:text="Rate (%)"
+				android:textSize="10dp"
+			/>
+			<TextView
+				android:id="@+id/wi_item_rss"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="2dp"
+				android:text="RSS"
+				android:gravity="center"
+				android:paddingRight="6dp"
+				android:textSize="10dp"
+			/>
+			<TextView
+				android:id="@+id/wi_item_rss_min"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_span="4"
+				android:gravity="left"
+				android:padding="2dp"
+				android:layout_marginLeft="2dp"
+				android:text="-90 dBm"
+				android:textSize="10dp"
+			/>
+			<TextView
+				android:id="@+id/wi_item_rss_max"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_span="4"
+				android:gravity="right"
+				android:padding="2dp"
+				android:text="-40"
+				android:textSize="10dp"
+			/>
+		</TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
+	</TableLayout>
+  
+</LinearLayout>
+</ScrollView>

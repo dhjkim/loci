@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menu_map_pick_date"
+        android:title="@string/menu_map_pick_date" 
+        android:icon="@android:drawable/ic_search_category_default"/>
+
+    <item android:id="@+id/menu_map_mode_map"
+        android:title="@string/menu_map_mode_map" 
+        android:icon="@android:drawable/ic_menu_mapmode"/>
+
+    <item android:id="@+id/menu_map_mode_sat"
+        android:title="@string/menu_map_mode_sat" 
+        android:icon="@android:drawable/ic_menu_mapmode"/>
+</menu>

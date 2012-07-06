@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright 2010 Google Inc.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<resources>
+  <color name="black">#FF000000</color>
+  <color name="blue">#FF0000FF</color>
+  <color name="darkgray">#FF444444</color>
+  <color name="gold">#FFffd700</color>
+  <color name="gray">#FFAAAAAA</color>
+  <color name="lightblue">#FF00FFFF</color>
+  <color name="opaque_shadow">#70000000</color>
+  <color name="red">#FFFF0000</color>
+  <color name="stat_label_background">#FFF0F0F0</color>
+  <color name="stat_label_text">#FF0F0F0F</color>
+  <color name="white">#FFFFFFFF</color>
+  <color name="stalegray">#FFB9D3EE</color>
+
+  <!-- Chart colors by series. -->
+  <!-- Green and a transparent green -->
+  <color name="elevation_border">#FF339933</color>
+  <color name="elevation_fill">#40B3CFB3</color>
+
+  <!-- Blue and a transparent blue -->
+  <color name="speed_border">#FF0066FF</color>
+  <color name="speed_fill">#40C8E0FF</color>
+
+  <!-- Red and a transparent red -->
+  <color name="heartrate_border">#FFCC3300</color>
+  <color name="heartrate_fill">#40E88A70</color>
+
+  <!-- Pink and a transparent pink -->
+  <color name="cadence_border">#FFF128F3</color>
+  <color name="cadence_fill">#40F128F3</color>
+
+  <!-- Purple and a transparent purple -->
+  <color name="power_border">#FF401465</color>
+  <color name="power_fill">#40401465</color>
+
+  <!--  Calendar -->  
+  <color name="event_background">#ffc3d9ff</color>
+  <color name="panel_text_foreground">#ffffffff</color>
+  <color name="daynames_background">#ffc3d9ff</color>
+  <color name="daynames_text_color">#ff112abb</color>
+  <color name="yellow">#ff0</color>
+  <color name="light_gray">#cdc9c9</color> 
+
+  <color name="selection">#ffffaa00</color>
+  <color name="pressed">#fffab400</color>
+      
+  <color name="month_day_number">#ff404040</color>
+  <color name="month_today_number">#ffffffff</color>
+  <color name="month_other_month">#ff595959</color>
+  <color name="month_other_month_day_number">#ffa0a0a0</color>
+  <color name="month_other_month_banner">#80595959</color>
+  <color name="month_week_banner">#20595959</color>
+
+  <color name="event_center">#ff6bd697</color>
+
+  <color name="agenda_day_bar_color">#c8c8c8</color>
+  
+  <!-- New UI -->
+  <color name="textColorIconOverlay">#fff</color>
+  <color name="textColorIconOverlayShadow">#000</color>
+  <color name="sect_secondary">#4fff</color>
+  <color name="quickcontact_disambig">#f2f2f2</color>
+  <color name="quickcontact_disambig_divider">#afafaf</color>
+
+  <color name="edit_divider">#ff666666</color>
+  <color name="background_secondary">#ff202020</color>
+  <color name="pinned_header_background">#ff202020</color>
+
+  <color name="translucent_search_background">#cc000000</color>
+  <color name="dim_foreground_dark">#bebebe</color>
+</resources>

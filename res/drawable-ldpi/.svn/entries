@@ -1,0 +1,54 @@
+8
+
+dir
+6
+http://cens.solidnetdns.com/svn/loci/trunk/Loci2/res/drawable-ldpi
+http://cens.solidnetdns.com/svn/loci
+
+
+
+2011-05-26T22:56:23.748877Z
+6
+loci
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+78e34247-78a9-450e-9095-d28566b5ffb8
+
+icon.png
+file
+
+
+
+
+2011-05-24T06:05:00.000000Z
+264c735b1cd5f1c4e9b665e90eaf30ce
+2011-05-26T22:56:23.748877Z
+6
+loci
+has-props
+
+sym_action_add.png
+file
+26
+
+
+
+2011-06-15T19:33:14.000000Z
+e183462d9a7bd5056bca6911979bfb52
+2011-08-30T17:16:00.566617Z
+26
+loci
+has-props
+

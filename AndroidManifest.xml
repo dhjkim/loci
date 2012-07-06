@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="edu.cens.loci"
+      android:versionCode="1"
+      android:versionName="1.0">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />  
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+	<uses-permission android:name="android.permission.CONTROL_LOCATION_UPDATES"/>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" /> 
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />    
+
+    <application android:icon="@drawable/loci_maps" android:label="@string/app_name">
+    
+  		<uses-library android:name="com.google.android.maps"/>
+    
+    	<provider android:name="edu.cens.loci.provider.LociProvider" android:authorities="edu.cens.loci"/>
+    
+        <activity android:name="LociTabActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+		<activity android:name=".ui.TabCalActivity">
+	        <action android:name="edu.cens.loci.action.VIEW_CALENDAR" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.TAB" />
+		</activity>
+		
+		<activity android:name=".ui.TabMapActivity">
+	        <action android:name="edu.cens.loci.action.VIEW_MAP" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.TAB" />
+		</activity>
+
+		<activity android:name=".ui.TabListActivity">
+	        <action android:name="edu.cens.loci.action.VIEW_LIST" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.TAB" />
+		</activity>
+		
+		<activity android:name=".ui.SettingsActivity"
+			android:label="@string/settingsTitle">
+			<intent-filter>
+				<action android:name="edu.cens.loci.action.VIEW_SETTINGS"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+
+		<!-- Calendar Activities -->
+		<activity android:name=".ui.calendar.MonthlyCalendar" 
+			android:screenOrientation="portrait"/>
+		<activity android:name=".ui.calendar.DailyCalendar" 
+			android:theme="@android:style/Theme.Light"/>    	
+		<activity android:name=".ui.calendar.DailySchedule" 
+			android:theme="@android:style/Theme.Light"/>
+		<activity android:name=".ui.calendar.VisitInfoViewerActivity"
+			android:screenOrientation="portrait" />
+			
+		<!-- Visit Activity -->	
+		<activity android:name=".ui.VisitDetailActivity"
+			android:label="@string/visitDetailTitle"
+			android:theme="@style/TallTitleBarTheme"
+		>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="vnd.android.cursor.item/vnd.cens.loci.visit"/>
+			</intent-filter>
+		</activity>	
+			
+		<!-- Places Activities -->
+		<activity android:name=".ui.PlaceListActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+				<data android:mimeType="vnd.android.cursor.dir/vnd.cens.loci.place"/>
+			</intent-filter>
+		
+			<intent-filter>
+				<action android:name="android.intent.action.INSERT_OR_EDIT"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+				<data android:mimeType="vnd.android.cursor.dir/vnd.cens.loci.place"/>
+			</intent-filter>
+			
+			<intent-filter>
+				<action android:name="android.intent.action.INSERT_OR_EDIT"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+				<data android:mimeType="vnd.android.cursor.item/vnd.cens.loci.place"/>
+			</intent-filter>
+			
+			<intent-filter>
+				<action android:name="edu.cens.loci.action.INSERT"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			
+			<intent-filter>
+				<action android:name="edu.cens.loci.action.CREATE_OR_ADDTO_FROM_SUGGESTED_PLACE"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+				<data android:mimeType="vnd.android.cursor.item/vnd.cens.loci.place"/>
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".ui.PlaceViewActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+				<data android:mimeType="vnd.android.cursor.item/vnd.cens.loci.place" android:host="edu.cens.loci" />
+			</intent-filter>
+		
+		</activity>
+	
+	    <!-- Edit or insert details for a place -->
+        <activity
+            android:name=".ui.PlaceEditActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <intent-filter android:label="@string/editPlaceDescription">
+                <action android:name="android.intent.action.EDIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.cens.loci.place" android:host="edu.cens.loci" />
+            </intent-filter>
+
+            <intent-filter android:label="@string/insertPlaceDescription">
+                <action android:name="android.intent.action.INSERT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/vnd.cens.loci.place" />
+            </intent-filter>
+            
+            <intent-filter android:label="@string/insertPlaceDescription">
+				<action android:name="edu.cens.loci.action.CREATE_FROM_SUGGESTED_PLACE"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+				<data android:mimeType="vnd.android.cursor.item/vnd.cens.loci.place"/>
+            </intent-filter>
+
+            <intent-filter android:label="@string/insertPlaceDescription">
+				<action android:name="edu.cens.loci.action.ADDTO_FROM_SUGGESTED_PLACE"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+				<data android:mimeType="vnd.android.cursor.item/vnd.cens.loci.place"/>
+            </intent-filter>
+            
+            
+            
+        </activity>
+
+		<!-- Map Edit -->
+		<activity android:name=".ui.MapEditViewActivity" 
+			android:process=":MapEditView"/>
+
+		<!-- Reboot / Watchdob -->
+        <receiver android:name="edu.cens.loci.components.WatchDogAlarmReceiver" />
+		<receiver android:name="edu.cens.loci.components.RebootEventReceiver">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED"/>
+				<action android:name="android.intent.category.HOME"/>
+			</intent-filter>
+		</receiver>
+
+		<!--  Status -->
+		<activity android:name=".ui.StatusViewActivity" />
+
+		<service android:name="edu.cens.loci.components.LociManagerService" 
+			android:enabled="true"
+			android:process=":remote">
+			<intent-filter>
+				<action android:name="edu.cens.loci.components.LociManagerService" />
+	        	<action android:name="edu.cens.loci.components.ILociManager" />
+	   		</intent-filter>
+		</service>
+		<service android:name="edu.cens.loci.wifiPeriodicScan.WifiPeriodicScanService" 
+			android:enabled="true"
+			android:process=":remote">
+		</service>
+
+    </application>
+</manifest>

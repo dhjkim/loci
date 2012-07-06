@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/service_start"
+        android:title="@string/menu_start" 
+        android:icon="@android:drawable/button_onoff_indicator_off"/>
+
+    <item android:id="@+id/service_stop"
+        android:title="@string/menu_stop" 
+        android:icon="@android:drawable/button_onoff_indicator_on"/>
+        
+    <item android:id="@+id/service_settings"
+    	android:title="@string/menu_settings"
+    	android:icon="@android:drawable/ic_menu_preferences"/>
+</menu>
