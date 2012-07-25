@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: C:\\Users\\donniehk\\workspace\\Loci2\\src\\edu\\cens\\loci\\components\\ILociManager.aidl
+ * Original file: C:\\Users\\donniehk\\Desktop\\Loci2\\src\\edu\\cens\\loci\\components\\ILociManager.aidl
  */
 package edu.cens.loci.components;
 public interface ILociManager extends android.os.IInterface

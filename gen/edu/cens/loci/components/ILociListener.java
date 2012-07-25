@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: C:\\Users\\donniehk\\workspace\\Loci2\\src\\edu\\cens\\loci\\components\\ILociListener.aidl
+ * Original file: C:\\Users\\donniehk\\Desktop\\Loci2\\src\\edu\\cens\\loci\\components\\ILociListener.aidl
  */
 package edu.cens.loci.components;
 public interface ILociListener extends android.os.IInterface

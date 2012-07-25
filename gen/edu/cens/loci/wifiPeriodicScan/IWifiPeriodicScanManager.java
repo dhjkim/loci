@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: C:\\Users\\donniehk\\workspace\\Loci2\\src\\edu\\cens\\loci\\wifiPeriodicScan\\IWifiPeriodicScanManager.aidl
+ * Original file: C:\\Users\\donniehk\\Desktop\\Loci2\\src\\edu\\cens\\loci\\wifiPeriodicScan\\IWifiPeriodicScanManager.aidl
  */
 package edu.cens.loci.wifiPeriodicScan;
 public interface IWifiPeriodicScanManager extends android.os.IInterface
